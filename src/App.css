@@ -1,22 +1,21 @@
+/*
+colors;
+--primary-color:  Blue Blossom (#2DA8D8FF);
+--secondary-color: Tap Shoe (#2A2B2DFF);
+--call-to-action: Danger Red (#D9514EFF);
+Danger Red (#D9514EFF), Tap Shoe (#2A2B2DFF) and Blue Blossom (#2DA8D8FF)
+
+fonts;
+ Montserrat & Courier New */
+
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('./components/resources/main-background.png'), linear-gradient(rgb(42, 43, 45) , rgb(42, 43, 45));
+  background-repeat: repeat, no-repeat;
+	background-size: auto, 100% 100%;
+	background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
+ 
