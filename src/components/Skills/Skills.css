@@ -1,0 +1,4 @@
+.skills__container{
+    grid-column: center-start / center-end;
+    background-color: teal;
+}

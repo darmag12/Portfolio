@@ -10,10 +10,9 @@ fonts;
 
 .App {
   width: 100%;
-  border: 1px solid red;
   display: grid;
-  grid-template-rows: 80vh 40vw repeat(5, min-content);
-  grid-template-columns: 1fr repeat(8, minmax(min-content, 14rem)) 1fr;
+  grid-template-rows: 95vh repeat(6, min-content);
+  grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
 
 }
 

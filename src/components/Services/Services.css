@@ -1,0 +1,5 @@
+.services__container{
+    grid-column: center-start / center-end;
+    background-color: wheat;
+    color: black;
+}

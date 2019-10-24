@@ -1,8 +1,10 @@
 import React from 'react'
+import './Projects.css'
+
 
 const Projects = () => {
     return (
-        <section>
+        <section className="project__container">
             my portfolio
         </section>
     )
