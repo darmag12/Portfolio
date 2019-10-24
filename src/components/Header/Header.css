@@ -1,8 +1,70 @@
 .header__container{
     grid-column: full-start / full-end;
-    background-image: linear-gradient(rgba(42, 43, 45, 0.5),rgba(42, 43, 45, 0.5) ), url('../resources/computer-desk-desktop-2811648.jpg');
+    background-image: linear-gradient(rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-2811648.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr repeat(7, minmax(min-content, )); */
+
+}
+/* ========================= LOGO STYLES ===================== */
+.logo-container{
+    
+}
+
+
+ #logo--main{
+    width: 10rem;
+}
+
+
+#logo--main path:nth-child(2){
+    stroke: #2DA8D8FF;
+    fill: #2DA8D8FF;
+}
+
+
+#logo--main path:nth-child(3){
+    stroke: #2DA8D8FF;
+    fill: #2DA8D8FF;
+}
+
+#logo--main path:nth-child(4){
+    stroke: #2DA8D8FF;
+    fill: #2DA8D8FF;
+}
+
+#logo--main path:nth-child(5){
+    stroke: var(--text-color);
+    fill: var(--text-color);
+}
+
+#logo--main path:nth-child(6){
+    stroke: var(--text-color);
+    fill: var(--text-color);
+}
+
+#logo--main path:nth-child(7){
+    stroke: var(--text-color);
+    fill: var(--text-color);
+}
+
+#logo--main path:nth-child(8){
+    stroke: var(--text-color);
+    fill: var(--text-color);
+}
+
+#logo--main path:nth-child(9){
+    stroke: var(--text-color);
+    fill: var(--text-color);
+}
+
+/* ===================================== end of Logo styles ========================== */
+
+/* ========================================= NAVIGATION STYLES ========================= */
+
+.navigation-container{
 
 }
