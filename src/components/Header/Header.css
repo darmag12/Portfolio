@@ -5,13 +5,16 @@
     background-repeat: no-repeat;
     background-position: center;
     display: grid;
-    grid-template-rows: repeat(2, minmax(min-content, 1fr));
-    /* grid-template-columns: 1fr 1fr 1fr repeat(7, minmax(min-content, )); */
+    grid-template-rows: repeat(4, minmax(min-content, 1fr));
+    grid-template-columns:[full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(1fr, 14rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+    overflow: hidden;
 
 }
+
 /* ========================= LOGO STYLES ===================== */
 .logo-container{
-    
+    grid-column: center-start / col-end 2;
+    margin-left: 1rem;
 }
 
 
@@ -63,8 +66,124 @@
 
 /* ===================================== end of Logo styles ========================== */
 
+
 /* ========================================= NAVIGATION STYLES ========================= */
 
 .navigation-container{
-
+    grid-column: col-start 7 / col-end 8;
+    margin-top: 2rem;
 }
+
+.navigation li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navigation li a{
+    display: inline-block;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: white;
+    animation: move-left .9s ease-in-out;
+    position: relative;
+}
+
+.navigation li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: #2DA8D8FF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s ease-in-out;
+}
+
+.navigation li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.fixed-navigation{
+    display: grid;
+    background-color: rgba(42, 43, 45, 0.705);
+    box-shadow: 1.5px 1.5px .5px rgba(109, 109, 109, 0.815);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    /* grid-column: full-start / -1; */
+    
+}
+
+.fas.fa-download {
+
+    display: inline-block;
+    padding-left: .5rem;
+}
+
+/* ===================================== End of Navigation styles ========================== */
+
+
+/* ========================================= Header text styles ========================= */
+
+.heading-text {
+    display: grid;
+    grid-row: 3 / 3;
+    grid-gap: 1rem;
+    margin: -1rem 0 2rem 3rem;
+    justify-content: start;
+    width: 100%;
+   
+}
+
+@media screen and (max-width: 480px){
+    .heading-text { 
+        margin: 1rem;
+        
+    }
+}
+
+.heading-text h1 {
+   font-size: 2.4rem; 
+}
+
+@media screen and (max-width: 480px){
+    .heading-text h1 { 
+        font-size: 2rem;
+        
+    
+    }
+}
+
+.heading-text h2 {
+    font-size: 2rem; 
+ }
+
+ @media screen and (max-width: 480px){
+    .heading-text h2 { 
+        font-size: 1.6rem;
+        
+    }
+}
+
+ /* ========================================= End of Header text styles ========================= */
+
+ /* =============================== animations =============================*/
+
+ @keyframes move-left{
+    from{
+        opacity: 0;
+        transform: translateX(400px);        
+    } 
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+
