@@ -126,6 +126,48 @@
     padding-left: .5rem;
 }
 
+
+
+/* ------------ responsive nav---------------- */
+/* .navigation-mobile .mobile-li{
+    
+} */
+
+.mobile-navigation{
+    grid-column: col-end 8 / col-end 9;
+    margin-top: 1rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ .mobile-li{
+    list-style: none;
+    display: block;
+    text-align: center;
+    line-height: 2;
+    margin-top: 1.2rem;
+    font-size: 1rem;
+}
+
+.none{display: none;}
+
+.mobile-fixed{background-color: rgb(42, 43, 45)}
+
+@media screen and (max-width: 800px){
+    .navigation li{
+        display: none;
+    }
+
+    .navigation .mobile-li{
+        display: block;
+    }
+}
+
+
+
+
+
 /* ===================================== End of Navigation styles ========================== */
 
 

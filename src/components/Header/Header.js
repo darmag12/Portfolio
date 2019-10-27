@@ -2,12 +2,12 @@ import React from 'react'
 import './Header.css'
 
 
-const Header = () => {
-
+const Header = (props) => {
+  
     return (
         <header className="header__container">
 
-          <div className="fixed-navigation">
+          <div className={props.headerClass}>
             <div className="logo-container">
                 <a href="index.html">
                      <svg id="logo--main" width="507" height="76" viewBox="0 0 507 76" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -43,14 +43,19 @@ const Header = () => {
             </div>
             <nav className="navigation-container">
                 <ul className="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#resume">Resume<i className="fas fa-download"></i></a></li>
+                    <li className={props.mobileViewNav}><a href="index.html">Home</a></li>
+                    <li className={props.mobileViewNav}><a href="#about">About</a></li>
+                    <li className={props.mobileViewNav}><a href="#portfolio">Portfolio</a></li>
+                    <li className={props.mobileViewNav}><a href="#skills">Skills</a></li>
+                    <li className={props.mobileViewNav}><a href="#contact">Contact</a></li>
+                    <li className={props.mobileViewNav}><a href="#resume">Resume<i className="fas fa-download"></i></a></li>
                 </ul>
             </nav>
+            <div className="mobile-navigation" style={{display: props.display}}
+                                               onClick={props.toggleNavOpenHandler}
+                                               onClick={props.toggleNavCloseHandler}>
+            <i className={props.menu}></i>
+            </div>
           </div>
          <div className="heading-text">
                 <h1>Hi! I'm Daryl Magera.</h1>
