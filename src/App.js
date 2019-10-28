@@ -31,14 +31,14 @@ screenChange = () => {
     this.setState({
       ...this.state.headerClass, 
       headerClass: "fixed-navigation mobile-fixed",
-      ...this.state.mobileViewNav,
-      mobileViewNav: '',
+      // ...this.state.mobileViewNav,
+      // mobileViewNav: '',
       ...this.state.display,
       display: 'block',
       ...this.state.noneClass,
       noneClass: 'none',
-      ...this.state.menu,
-      menu: 'fas fa-bars'
+      // ...this.state.menu,
+      // menu: 'fas fa-bars'
 
     });
   } else {
@@ -46,12 +46,14 @@ screenChange = () => {
     this.setState({
       ...this.state.headerClass,
        headerClass: "fixed-navigation",
-       ...this.state.navigationView,
+       ...this.state.mobileViewNav,
        mobileViewNav: '',
        ...this.state.display,
        display: 'none',
        ...this.state.noneClass,
-      noneClass: 'none'
+      noneClass: 'none',
+      ...this.state.menu,
+      menu: 'fas fa-bars'
       
     });
   }
@@ -59,39 +61,27 @@ screenChange = () => {
 
 toggleNavOpenHandler = () => {
   let mql = window.matchMedia('(max-width: 800px)');
+  let newMenu;
+  newMenu = this.state.menu === 'fas fa-bars' ? 'fas fa-times' : 'fas fa-bars'
+  let toggleMenu;
+   toggleMenu = newMenu === 'fas fa-times' ? 'mobile-li' : ''
   if(mql.matches){
     this.setState({
       ...this.state.mobileViewNav,
-      mobileViewNav: 'mobile-li',
+      mobileViewNav: toggleMenu,
+      ...this.state.menu,
+      menu: newMenu
     });
   } else {
     this.setState({
       ...this.state.mobileViewNav,
       mobileViewNav: '',
-      ...this.state.menu,
-      menu: 'fas fa-bars'
+      // ...this.state.menu,
+      // menu: 'fas fa-bars'
     });
   }
 }
 
-toggleNavCloseHandler = () => {
-  if(this.state.menu === 'fas fa-bars'){
-    this.setState({
-      ...this.state.menu,
-      menu: 'fas fa-times',
-      ...this.state.mobileViewNav,
-      mobileViewNav: 'mobile-li',
-    });
-
-  } else{
-    this.setState({
-      ...this.state.menu,
-      menu: 'fas fa-bars',
-      ...this.state.mobileViewNav,
-      mobileViewNav: '',
-    });
-  }
-}
 
   render(){
     window.addEventListener('resize',this.screenChange)

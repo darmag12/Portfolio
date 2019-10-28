@@ -71,7 +71,7 @@
 
 .navigation-container{
     grid-column: col-start 7 / col-end 8;
-    margin-top: 2rem;
+    align-self: center;
 }
 
 .navigation li {
@@ -133,6 +133,7 @@
     
 } */
 
+
 .mobile-navigation{
     grid-column: col-end 8 / col-end 9;
     margin-top: 1rem;
@@ -140,6 +141,7 @@
     font-size: 2rem;
     cursor: pointer;
 }
+
 
  .mobile-li{
     list-style: none;

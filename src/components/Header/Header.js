@@ -52,8 +52,7 @@ const Header = (props) => {
                 </ul>
             </nav>
             <div className="mobile-navigation" style={{display: props.display}}
-                                               onClick={props.toggleNavOpenHandler}
-                                               onClick={props.toggleNavCloseHandler}>
+                                               onClick={props.toggleNavOpenHandler}>
             <i className={props.menu}></i>
             </div>
           </div>
