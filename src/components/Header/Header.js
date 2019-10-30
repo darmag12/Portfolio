@@ -57,9 +57,9 @@ const Header = (props) => {
             </div>
           </div>
          <div className="heading-text">
-                <h1>Hi! I'm Daryl Magera.</h1>
-                <h2>I'm a Front-end Developer</h2>
-                <button className="btn">Learn More</button>
+                <h1>Hi! I'm Daryl Magera</h1>
+                <h2>I'm a Front-end Developer.</h2>
+                <a href="#about"><button className="btn">Learn More</button></a>
          </div>
         </header>
     )

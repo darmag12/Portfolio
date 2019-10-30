@@ -30,7 +30,7 @@
   
  button:focus {outline:0;}
  input:focus {outline:0;}
- html,body{box-sizing: border-box;}
+ html,body{box-sizing: border-box; scroll-behavior: smooth;}
 
 /* ========================== END OF RESET =================================*/
 
@@ -91,9 +91,23 @@ h3{
   z-index: 1;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
   h3{ 
       font-size: 1.3rem;
+  
+  }
+}
+
+@media screen and (max-width: 550px){
+  h3{ 
+      font-size: 1rem;
+  
+  }
+}
+
+@media screen and (max-width: 460px){
+  h3{ 
+      font-size: .9rem;
   
   }
 }
@@ -109,6 +123,14 @@ h3::after{
   background-color: rgb(57, 58, 61);
   border-right: none;
   z-index: -1;
+}
+
+
+@media screen and (max-width: 600px){
+  h3::after{ 
+    width: 95px;
+  
+  }
 }
 
 

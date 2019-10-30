@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { projects } from './projectData'
 // import WelcomePage from './components/WelcomePage/WelcomePage';
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -23,6 +24,8 @@ state = {
   noneClass: 'none',
   menu: "fas fa-bars",
   // close: "fas fa-times"
+  projectData: projects
+ 
 }
 
 screenChange = () => {
@@ -99,7 +102,7 @@ toggleNavOpenHandler = () => {
                 menu={this.state.menu}
         />
         <About />
-        <Projects />
+        <Projects projectData={this.state.projectData}/>
         <Skills />
         <Servises />
         <Contact />
