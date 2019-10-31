@@ -1,5 +1,6 @@
 import React from 'react'
 import './WelcomePage.css'
+import { Link } from 'react-router-dom'
 
 const WelcomePage = () => {
     return(
@@ -37,7 +38,7 @@ const WelcomePage = () => {
 </svg>
         <p className="welcome-page-paragraph">Daryl technologies</p>
         <div className="btn--center">
-        <button className="welcome-page-btn btn">Go To Home Page</button>
+        <Link to="/home"><button className="welcome-page-btn btn">Go To Home Page</button></Link>
         </div>
      </div>
     )

@@ -9,7 +9,7 @@ const Header = (props) => {
 
           <div className={props.headerClass}>
             <div className="logo-container">
-                <a href="index.html">
+                <a href="/">
                      <svg id="logo--main" width="507" height="76" viewBox="0 0 507 76" fill="transparent" xmlns="http://www.w3.org/2000/svg">
             <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="507" height="76" fill="black">
             <rect fill="white" width="507" height="76"/>
@@ -43,7 +43,7 @@ const Header = (props) => {
             </div>
             <nav className="navigation-container">
                 <ul className="navigation">
-                    <li className={props.mobileViewNav}><a href="index.html">Home</a></li>
+                    <li className={props.mobileViewNav}><a href="/home">Home</a></li>
                     <li className={props.mobileViewNav}><a href="#about">About</a></li>
                     <li className={props.mobileViewNav}><a href="#portfolio">Portfolio</a></li>
                     <li className={props.mobileViewNav}><a href="#skills">Skills</a></li>

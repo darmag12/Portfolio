@@ -102,6 +102,19 @@
     -webkit-animation: draw-anim 3s ease-in-out forwards 2.1s;
 }
 
+@media screen and (max-width: 550px){
+
+#logo{
+    width: 100%;
+   
+}
+
+.welcome-page-heading{
+    font-size: 1.5rem;
+}
+
+}
+
 
 
 /* ANIMATIONS */

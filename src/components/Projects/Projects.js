@@ -1,5 +1,6 @@
 import React from 'react'
 import './Projects.css'
+import { Link } from 'react-router-dom'
 // import { pics } from '../resources/myaboutpic.jpg'
 
 
@@ -13,9 +14,9 @@ const Projects = (props) => {
 
                 {props.projectData.map(item => {
                     return <div className="project" key={item.id}>
-                        <a href={item.id}>
+                        <Link to={`/portfolio/${item.id}`}>
                             <img className="project-img" src={item.img} alt={item.alt}/>
-                        </a>
+                        </Link>
                     </div>
                 })}
             

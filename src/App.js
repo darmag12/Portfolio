@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { projects } from './projectData'
-// import WelcomePage from './components/WelcomePage/WelcomePage';
+import WelcomePage from './components/WelcomePage/WelcomePage';
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
@@ -9,6 +10,7 @@ import Skills from './components/Skills/Skills'
 import Servises from './components/Services/Services'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import ProjectOverview from './components/Projects/ProjectOverview'
 
 
 
@@ -90,26 +92,33 @@ toggleNavOpenHandler = () => {
     window.addEventListener('resize',this.screenChange)
     window.addEventListener('load', this.screenChange)
     return (
-      <>
-        {/* <WelcomePage /> */}
+      <Router>
+        <Switch>
+        <Route path="/" exact component={WelcomePage}/>
+        <Route path="/home" exact render={() => {
+          return (     
       <div className="App">
-        <Header headerClass={this.state.headerClass} 
-                mobileViewNav={this.state.mobileViewNav}
-                display={this.state.display}
-                toggleNavOpenHandler={this.toggleNavOpenHandler}
-                noneClass={this.state.noneClass}
-                toggleNavCloseHandler={this.toggleNavCloseHandler}
-                menu={this.state.menu}
-        />
-        <About />
-        <Projects projectData={this.state.projectData}/>
-        <Skills />
-        <Servises />
-        <Contact />
-        <Footer />
-        
-      </div>
-      </>
+      <Header headerClass={this.state.headerClass} 
+              mobileViewNav={this.state.mobileViewNav}
+              display={this.state.display}
+              toggleNavOpenHandler={this.toggleNavOpenHandler}
+              noneClass={this.state.noneClass}
+              toggleNavCloseHandler={this.toggleNavCloseHandler}
+              menu={this.state.menu}
+      />
+      <About />
+      <Projects projectData={this.state.projectData}/>
+      <Skills />
+      <Servises />
+      <Contact />
+      <Footer />
+    </div>
+          )
+
+        }}/>
+        <Route path="/portfolio/" exact component={ProjectOverview}/>
+        </Switch>
+      </Router>
     );
   }
 }

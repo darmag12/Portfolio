@@ -231,6 +231,15 @@ p{
   
 }
 
+.fas.fa-cog{
+  color: #2DA8D8FF;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
 /* ======================= end of specials ================ */
   
 
