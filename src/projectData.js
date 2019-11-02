@@ -17,17 +17,17 @@ export const projects = [
     },
 
     {id: "project-3",
-     img: require('./components/resources/myaboutpic.png'),
+     img: require('./components/resources/omnifood.png'),
      alt: "project-3" 
     },
 
     {id: "project-4",
-     img: require('./components/resources/myaboutpic.png'),
+     img: require('./components/resources/omnifood.png'),
      alt: "project-4" 
     },
 
     {id: "project-5",
-     img: require('./components/resources/myaboutpic.png'),
+     img: require('./components/resources/omnifood.png'),
      alt: "project-5" 
     },
 
@@ -83,7 +83,7 @@ export const projects = [
      ability to add and delete an Income or Expense,
      calculates the percentage you spend in relation to your budget,
      Updates everything in real time`,
-     img: require('./components/resources/myaboutpic.png'),
+     img: require('./components/resources/omnifood.png'),
      alt: "project-3",
      num: 2.4
     },
@@ -96,7 +96,7 @@ export const projects = [
      ability to add and delete an Income or Expense,
      calculates the percentage you spend in relation to your budget,
      Updates everything in real time`,
-     img: require('./components/resources/myaboutpic.png'),
+     img: require('./components/resources/omnifood.png'),
      alt: "project-4",
      num: 2.5 
     },
@@ -109,7 +109,7 @@ export const projects = [
      ability to add and delete an Income or Expense,
      calculates the percentage you spend in relation to your budget,
      Updates everything in real time`,
-     img: require('./components/resources/myaboutpic.png'),
+     img: require('./components/resources/omnifood.png'),
      alt: "project-5",
      num: 2.6
     },
