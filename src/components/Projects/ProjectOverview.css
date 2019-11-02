@@ -1,22 +1,53 @@
 .project__overview-container{
     display: grid;
     justify-items: center;
+    align-items: center;
     grid-template-columns: [full-start] 1rem [center-start] repeat(4, [col-start] minmax(min-content, 1fr)[col-end]) [center-end] 1rem [full-end] ;
     grid-template-rows: 2rem repeat(3, minmax(min-content, max-content)) 2rem;
     grid-row-gap: 3rem;
     grid-column-gap: 2rem;
-    margin-top: 0rem;
+    overflow: hidden;
 }
 
 .project__overview-header{
     grid-column: col-start 1 / col-end 4;
+    animation: to-top .7s ease;
+    align-self: center;
+}
+
+@media screen and (max-width: 388px){
+    .project__overview-header{
+        font-size: .7rem;
+    }
+
+    .project__overview-header::after{
+        left: -2.0rem;
+        bottom: 0;
+        width: 65px;
+        height: 100%;
+    }
 
 }
+
+.h4--mod{
+    text-shadow: 1px 1px 1px rgb(163, 163, 163);
+    position: relative;
+}
+
+@media screen and (max-width: 860px){
+    .h4--mod{
+        text-align: center;
+    }
+
+}
+
 
 
 .project__overview-description{
     grid-column: col-start 1  / col-end 2 ;
     grid-row: 2/ span 2;
+    animation: move-right .7s ease;
+    align-self: start;
     position: relative;
 }
 
@@ -26,8 +57,14 @@
     left: -15px;
     top: 0;
     width: .7%;
-    height: 70%;
+    height: 100%;
     background-color: #2DA8D8FF;
+    animation: to-top-delay .8s ease;
+}
+
+.project__overview-text{
+    word-spacing: .1rem;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 860px){
@@ -45,6 +82,7 @@
     grid-column: col-start 3 / col-end 4;
     grid-row: 2/ span 2;
     text-align: center;
+    animation: move-left .7s ease;
 }
 
 @media screen and (max-width: 860px){
@@ -63,8 +101,10 @@
 }
 
 
-.image--width{
+.image--mod{
     width: 100%;
+    border-radius: 5px;
+
 }
 
 .btn--view{
@@ -93,4 +133,63 @@
 .btn--back:hover{
     transform: translateX(10px);
 }
+
+/* ============================ Animations ================================ */
+
+@keyframes move-left{
+    from{
+        opacity: 0;
+        transform: translateX(400px);        
+    } 
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+ 
+@keyframes move-right{
+    from{
+        opacity: 0;
+        transform: translateX(-400px);
+    } 
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+  
+@keyframes to-top{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+        
+    } 
+    50%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+ }
+
+ @keyframes to-top-delay{
+    0%{
+        opacity: 0;
+        transform: translateY(80px);
+    } 
+    50%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+ }
 

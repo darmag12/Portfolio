@@ -3,25 +3,52 @@ import './ProjectOverview.css'
 
 
 
-const ProjectOverview = () => {
-    // console.log(match)
+const ProjectOverview = (props) => {
+    let id = props.match.params.projectId
+    
+
     return (
         <>
         <a href="/home/#portfolio"><i className="fas fa-backward btn--back"> Go back to projects</i></a>
         <div className="project__overview-container">
              <h3 className="project__overview-header">
                     Project Overview 
-                    <span className="dots">....................<i className="fas fa-circle"></i></span><span className="num">2.5</span>
+                    {props.projectDetail.map(detail => {
+                        return id === detail.id ?
+                        <span key={detail.id}>
+                        <span className="dots">....................<i className="fas fa-circle"></i></span><span className="num">{detail.num}</span>
+                        </span>
+                        : null
+                    })}
                 </h3>
+
                 <div className="project__overview-description">
-                    <h4>Title</h4>
-                        <p>
-                            project description text goes here asd,hfaknjkeanijncdc wkjikncae wkefgber kqwrfukhkberfbk cugkcn kinkerf ikchguakfurehfourhouvenerluw ielulhfrunrewi eriuhfnlerw iukherfun4wgmcgiyhf ,ALUIHLFH My name is Daryl Magera and I like to code.
+                    {props.projectDetail.map(detail => {
+                        return id === detail.id ?
+                        <div key={detail.id}>
+                        <h4 className="h4--mod">{detail.title}</h4>
+                        <br></br>
+                        <p className="project__overview-text">
+                            {detail.description}
+                            <br>
+                            </br>
+                            <br></br>
+                            <strong>{detail.features}</strong>
                         </p>
+                        </div>
+                        : null
+                    })}
+                    
                 </div>
 
                 <div className="project__overview-gif">
-                        <img className="image--width" src={require('../resources/forkify.png')} alt="project-0"></img>
+                {props.projectDetail.map(detail => {
+                        return id === detail.id ?
+                        <div key={detail.id}>
+                        <img className="image--mod" src={detail.img} alt={detail.alt}></img>
+                        </div>
+                        : null
+                    })}
                         <button className="btn btn--view">View Site</button>
                         <button className="btn btn--view">View Code</button>
                 </div>

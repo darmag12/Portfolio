@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { projects } from './projectData'
+import { projectDetail } from './projectData'
 import WelcomePage from './components/WelcomePage/WelcomePage';
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -26,7 +27,8 @@ state = {
   noneClass: 'none',
   menu: "fas fa-bars",
   // close: "fas fa-times"
-  projectData: projects
+  projectData: projects,
+  projectDetail: projectDetail
  
 }
 
@@ -81,8 +83,6 @@ toggleNavOpenHandler = () => {
     this.setState({
       ...this.state.mobileViewNav,
       mobileViewNav: '',
-      // ...this.state.menu,
-      // menu: 'fas fa-bars'
     });
   }
 }
@@ -97,26 +97,29 @@ toggleNavOpenHandler = () => {
         <Route path="/" exact component={WelcomePage}/>
         <Route path="/home" exact render={() => {
           return (     
-      <div className="App">
-      <Header headerClass={this.state.headerClass} 
-              mobileViewNav={this.state.mobileViewNav}
-              display={this.state.display}
-              toggleNavOpenHandler={this.toggleNavOpenHandler}
-              noneClass={this.state.noneClass}
-              toggleNavCloseHandler={this.toggleNavCloseHandler}
-              menu={this.state.menu}
-      />
-      <About />
-      <Projects projectData={this.state.projectData}/>
-      <Skills />
-      <Servises />
-      <Contact />
-      <Footer />
-    </div>
+              <div className="App">
+              <Header headerClass={this.state.headerClass} 
+                      mobileViewNav={this.state.mobileViewNav}
+                      display={this.state.display}
+                      toggleNavOpenHandler={this.toggleNavOpenHandler}
+                      noneClass={this.state.noneClass}
+                      toggleNavCloseHandler={this.toggleNavCloseHandler}
+                      menu={this.state.menu}
+              />
+              <About />
+              <Projects projectData={this.state.projectData}/>
+              <Skills />
+              <Servises />
+              <Contact />
+              <Footer />
+            </div>
           )
 
         }}/>
-        <Route path="/portfolio/" exact component={ProjectOverview}/>
+        <Route path="/portfolio/:projectId" render={({match}) => {
+          return <ProjectOverview projectDetail={this.state.projectDetail}
+                                  match={match}/>
+        }}/>
         </Switch>
       </Router>
     );
