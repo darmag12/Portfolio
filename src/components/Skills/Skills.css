@@ -1,4 +1,119 @@
 .skills__container{
     grid-column: center-start / center-end;
-    background-color: teal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    grid-row-gap: 2rem;
 }
+
+.skills-header{
+    grid-column: 1/ -1;
+    grid-row: 1 / 1;
+}
+
+.skills{
+    grid-column: 1/ -1;
+    grid-row: 2 / 2;
+    background-color: rgb(54, 55, 58);
+    border-radius: 2px;
+    grid-gap: 1rem;
+    /* justify-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills--tech{
+    display: grid;
+    grid-gap: 1rem;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+}
+
+.fas.fa-cogs{
+    justify-self: center;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 1rem;
+    color: rgb(122, 122, 122);
+    grid-column: 1/ -1;
+    grid-row: 1 / 1;
+}
+
+.sub--text{
+    color: rgb(122, 122, 122);
+}
+
+.skills--tech .tech--01{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/ 1;
+    grid-row: 2 / 2;
+}
+
+.skills--tech .tech--02{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/ 2;
+    grid-row: 2 / 2;
+}
+
+.skills--tech .num{
+    color: rgb(134, 134, 134);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1030px){
+
+    .skills--tech .num{
+        font-size: .95rem;
+    }
+}
+
+
+.skills--tech .num .fas{
+    vertical-align: middle;
+    margin-right: .2rem;
+}
+
+.middle--dots{
+    vertical-align: super;
+    margin: .5rem;
+}
+
+.skills--tech .fab{
+    color: #2DA8D8FF;
+    margin: .4rem;
+}
+
+.skills--tech .fas.fa-sitemap{
+    color: #2DA8D8FF;
+    margin: .4rem;
+}
+
+/* ===================================== Other skills ============================ */
+.skills--other{
+    align-self: start;
+    justify-self: center;
+
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, max-content)); */
+}
+
+.skills--other .other{
+    display: flex;
+    flex-direction: column;
+}
+
+.fas.fa-code-branch{
+    justify-self: center;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 1rem;
+    /* grid-column: 1/ -1;
+    grid-row: 1 / 1; */
+    color: rgb(122, 122, 122);
+}
+
+

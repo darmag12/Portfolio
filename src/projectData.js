@@ -46,7 +46,9 @@ export const projects = [
       also no need of worrying about losing your favourite recipe list when you refresh the site or visit a different site`,
      img: require('./components/resources/forkify-gif.gif'),
      alt: "project-0",
-     num: 2.1
+     num: 2.1,
+     siteLink: "https://www.forkify.cf/",
+     codeLink: "https://github.com/darmag12/forkify-app"
     },
 
     {id: "project-1",
@@ -59,7 +61,9 @@ export const projects = [
       Updates everything in real time`,
      img: require('./components/resources/budgety-gif.gif'),
      alt: "project-1",
-     num: 2.2
+     num: 2.2,
+     siteLink: "https://www.budgety.cf/",
+     codeLink: "https://github.com/darmag12/Budgety-app"
     },
 
     {id: "project-2",
@@ -72,7 +76,9 @@ export const projects = [
      Responsive`,
      img: require('./components/resources/omnifood-gif.gif'),
      alt: "project-2",
-     num: 2.3
+     num: 2.3,
+     siteLink: "https://www.omnifood.cf/",
+     codeLink: "https://github.com/darmag12/Omnifood"
     },
 
     {id: "project-3",
@@ -85,7 +91,9 @@ export const projects = [
      Updates everything in real time`,
      img: require('./components/resources/omnifood.png'),
      alt: "project-3",
-     num: 2.4
+     num: 2.4,
+     siteLink: "https://www.omnifood.cf/",
+     codeLink: "https://github.com/darmag12/Omnifood"
     },
 
     {id: "project-4",
@@ -98,7 +106,9 @@ export const projects = [
      Updates everything in real time`,
      img: require('./components/resources/omnifood.png'),
      alt: "project-4",
-     num: 2.5 
+     num: 2.5,
+     siteLink: "https://www.omnifood.cf/",
+     codeLink: "https://github.com/darmag12/Omnifood"
     },
 
     {id: "project-5",
@@ -111,7 +121,9 @@ export const projects = [
      Updates everything in real time`,
      img: require('./components/resources/omnifood.png'),
      alt: "project-5",
-     num: 2.6
+     num: 2.6,
+     siteLink: "https://www.omnifood.cf/",
+     codeLink: "https://github.com/darmag12/Omnifood"
     },
 
   ]

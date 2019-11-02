@@ -3,6 +3,7 @@ import './ProjectOverview.css'
 
 
 
+
 const ProjectOverview = (props) => {
     let id = props.match.params.projectId
     
@@ -46,11 +47,11 @@ const ProjectOverview = (props) => {
                         return id === detail.id ?
                         <div key={detail.id}>
                         <img className="image--mod" src={detail.img} alt={detail.alt}></img>
+                        <a href={detail.siteLink} target="_blank" rel="noopener noreferrer"><button className="btn btn--view">View Site</button></a>
+                        <a href={detail.codeLink} target="_blank" rel="noopener noreferrer"><button className="btn btn--view">View Code</button></a>
                         </div>
                         : null
                     })}
-                        <button className="btn btn--view">View Site</button>
-                        <button className="btn btn--view">View Code</button>
                 </div>
         </div>
         </>
