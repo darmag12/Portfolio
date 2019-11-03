@@ -104,6 +104,10 @@
     border-radius: 5px;
 }
 
+.about-card  p {
+    color: rgb(175, 173, 173);
+}
+
 @media screen and (max-width: 900px){
     .about-card { 
         display: grid;

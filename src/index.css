@@ -40,6 +40,7 @@
   --primary-color: #2DA8D8FF;
   --secondary-color: #2A2B2DFF;
   --cta-color: #D9514EFF;
+  --text-in-light-grey-bg: rgb(134, 134, 134);
   --text-color: rgb(219, 219, 219);
   --lighter-secondary-color: rgb(73, 74, 78);
 }

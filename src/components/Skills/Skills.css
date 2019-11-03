@@ -17,10 +17,16 @@
     background-color: rgb(54, 55, 58);
     border-radius: 2px;
     grid-gap: 1rem;
-    /* justify-items: center; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+@media screen and (max-width: 1000px){
+    .skills{
+        grid-template-rows: repeat(2, minmax(min-content, max-content));
+    }
+}
+
 
 .skills--tech{
     display: grid;
@@ -30,18 +36,52 @@
     grid-template-rows: repeat(2, minmax(min-content, max-content));
 }
 
+@media screen and (max-width: 1000px){
+    .skills--tech{
+        grid-template-rows: repeat(3, minmax(min-content, max-content));
+    }
+}
+
+@media screen and (max-width: 511px){
+    .skills--tech{
+        grid-column: 1 / -1;
+    }
+}
+
 .fas.fa-cogs{
     justify-self: center;
     font-size: 1.5rem;
     display: inline-block;
     margin: 1rem;
-    color: rgb(122, 122, 122);
+    color: var(--text-in-light-grey-bg);
     grid-column: 1/ -1;
     grid-row: 1 / 1;
 }
 
+@media screen and (max-width: 653px){
+    .fas.fa-cogs{
+        font-size: 1.3rem;
+    }
+   
+}
+
+@media screen and (max-width: 600px){
+    .fas.fa-cogs{
+        font-size: 1rem;
+    }
+   
+}
+
+@media screen and (max-width: 511px){
+    .fas.fa-cogs{
+        font-size: 1.5rem;
+    }
+   
+}
+
+
 .sub--text{
-    color: rgb(122, 122, 122);
+    color: var(--text-in-light-grey-bg);
 }
 
 .skills--tech .tech--01{
@@ -51,6 +91,13 @@
     grid-row: 2 / 2;
 }
 
+@media screen and (max-width: 1000px){
+    .skills--tech .tech--01{
+        grid-column: 1/ -1;
+        grid-row: 2 / 2;
+    }
+}
+
 .skills--tech .tech--02{
     display: flex;
     flex-direction: column;
@@ -58,8 +105,16 @@
     grid-row: 2 / 2;
 }
 
+@media screen and (max-width: 1000px){
+    .skills--tech .tech--02{
+        grid-column: 1/ -1;
+        grid-row: 3 / 3;
+        margin-left: -1.5rem;
+    }
+}
+
 .skills--tech .num{
-    color: rgb(134, 134, 134);
+    color: var(--text-in-light-grey-bg);
     font-size: 1rem;
 }
 
@@ -69,6 +124,21 @@
         font-size: .95rem;
     }
 }
+
+@media screen and (max-width: 600px){
+
+    .skills--tech .num{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 511px){
+
+    .skills--tech .num{
+        font-size: 1rem;
+    }
+}
+
 
 
 .skills--tech .num .fas{
@@ -95,25 +165,92 @@
 .skills--other{
     align-self: start;
     justify-self: center;
-
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, minmax(min-content, max-content)); */
 }
+
+@media screen and (max-width: 511px){
+    .skills--other{
+        align-self: start;
+        justify-self: center;
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+    }
+}
+
 
 .skills--other .other{
     display: flex;
     flex-direction: column;
+    margin-top: .8rem;
 }
 
+
+.skills--other .num{
+    color: var(--text-in-light-grey-bg);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px){
+
+    .skills--other .num{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 511px){
+
+    .skills--other .num{
+        font-size: 1rem;
+    }
+}
+
+
+
+.skills--other .num .fas{
+    vertical-align: middle;
+    margin-right: .2rem;
+}
+
+
+.skills--other .fab{
+    color: #2DA8D8FF;
+    margin: .4rem;
+}
+
+
+.skills--other .fas{
+    color: #2DA8D8FF;
+    margin: .4rem;
+}
+
+/* Other text and icon */
 .fas.fa-code-branch{
     justify-self: center;
     font-size: 1.5rem;
     display: inline-block;
     margin: 1rem;
-    /* grid-column: 1/ -1;
-    grid-row: 1 / 1; */
-    color: rgb(122, 122, 122);
+    color: var(--text-in-light-grey-bg);
 }
+
+@media screen and (max-width: 653px){
+    .fas.fa-code-branch{
+        font-size: 1.3rem;
+
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fas.fa-code-branch{
+        font-size: 1rem;
+
+    }
+}
+
+@media screen and (max-width: 511px){
+    .fas.fa-code-branch{
+        font-size: 1.5rem;
+
+    }
+}
+
 
 

@@ -4,7 +4,7 @@ import './Skills.css'
 
 const Skills = () => {
     return (
-        <section className="skills__container">
+        <section id="skills" className="skills__container">
             <h3 className="skills-header">
                     My Skills <span className="dots">....................<i className="fas fa-circle"></i></span><span className="num">03.</span>
                 </h3>
@@ -77,8 +77,8 @@ const Skills = () => {
                             <i className="fas fa-circle"></i>
                             3.08 
                         <span className="middle--dots">........</span>
-                            JavaScript 
-                            <i className="fab fa-js"></i>
+                            Figma 
+                            <i className="fab fa-figma"></i>
                         </span>
 
                         <span className="num">
@@ -104,42 +104,42 @@ const Skills = () => {
                 <div className="other">
                     <span className="num">
                                 <i className="fas fa-circle"></i>
-                                3.06 
+                                3.11 
                             <span className="middle--dots">........</span>
-                                Node 
-                                <i className="fab fa-node"></i>
+                                Shopify 
+                                <i className="fas fa-shopping-cart"></i>
                             </span>
                             
                             <span className="num">
                                 <i className="fas fa-circle"></i>
-                                3.07 
+                                3.12 
                             <span className="middle--dots">........</span>
-                                Less 
-                                <i className="fab fa-less"></i>
+                                Facebook Ads 
+                                <i className="fas fa-ad"></i>
                             </span>
 
                             <span className="num">
                                 <i className="fas fa-circle"></i>
-                                3.08 
+                                3.13 
                             <span className="middle--dots">........</span>
-                                JavaScript 
-                                <i className="fab fa-js"></i>
+                                Dropshipping 
+                                <i className="fas fa-shipping-fast"></i>
                             </span>
 
                             <span className="num">
                                 <i className="fas fa-circle"></i>
-                                3.09 
+                                3.14 
                             <span className="middle--dots">........</span>
-                                git 
-                                <i className="fab fa-git-square"></i>
+                                Bilingual
+                                <i className="fas fa-globe-africa"></i>
                             </span>
 
                             <span className="num">
                                 <i className="fas fa-circle"></i>
-                                3.10 
+                                3.15 
                             <span className="middle--dots">........</span>
-                                gitHub 
-                                <i className="fab fa-github"></i>
+                                Product hunt 
+                                <i className="fab fa-product-hunt"></i>
                             </span>
                 </div>
                 </div>
