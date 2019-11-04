@@ -16,7 +16,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.01 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             HTML 
                             <i className="fab fa-html5"></i>
                         </span>
@@ -24,7 +24,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.02 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             CSS 
                             <i className="fab fa-css3-alt"></i>
                         </span>
@@ -32,7 +32,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.03 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             JavaScript 
                             <i className="fab fa-js"></i>
                         </span>
@@ -40,7 +40,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.04 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             React 
                             <i className="fab fa-react"></i>
                         </span>
@@ -48,7 +48,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.05 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             Redux 
                             <i className="fas fa-sitemap"></i>
                         </span>
@@ -60,7 +60,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.06 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             Node 
                             <i className="fab fa-node"></i>
                         </span>
@@ -68,7 +68,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.07 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             Less 
                             <i className="fab fa-less"></i>
                         </span>
@@ -76,7 +76,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.08 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             Figma 
                             <i className="fab fa-figma"></i>
                         </span>
@@ -84,7 +84,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.09 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             git 
                             <i className="fab fa-git-square"></i>
                         </span>
@@ -92,7 +92,7 @@ const Skills = () => {
                         <span className="num">
                             <i className="fas fa-circle"></i>
                             3.10 
-                        <span className="middle--dots">........</span>
+                        <span className="middle--dots">..........</span>
                             gitHub 
                             <i className="fab fa-github"></i>
                         </span>
@@ -105,7 +105,7 @@ const Skills = () => {
                     <span className="num">
                                 <i className="fas fa-circle"></i>
                                 3.11 
-                            <span className="middle--dots">........</span>
+                            <span className="middle--dots">..........</span>
                                 Shopify 
                                 <i className="fas fa-shopping-cart"></i>
                             </span>
@@ -113,7 +113,7 @@ const Skills = () => {
                             <span className="num">
                                 <i className="fas fa-circle"></i>
                                 3.12 
-                            <span className="middle--dots">........</span>
+                            <span className="middle--dots">..........</span>
                                 Facebook Ads 
                                 <i className="fas fa-ad"></i>
                             </span>
@@ -121,7 +121,7 @@ const Skills = () => {
                             <span className="num">
                                 <i className="fas fa-circle"></i>
                                 3.13 
-                            <span className="middle--dots">........</span>
+                            <span className="middle--dots">..........</span>
                                 Dropshipping 
                                 <i className="fas fa-shipping-fast"></i>
                             </span>
@@ -129,7 +129,7 @@ const Skills = () => {
                             <span className="num">
                                 <i className="fas fa-circle"></i>
                                 3.14 
-                            <span className="middle--dots">........</span>
+                            <span className="middle--dots">..........</span>
                                 Bilingual
                                 <i className="fas fa-globe-africa"></i>
                             </span>
@@ -137,7 +137,7 @@ const Skills = () => {
                             <span className="num">
                                 <i className="fas fa-circle"></i>
                                 3.15 
-                            <span className="middle--dots">........</span>
+                            <span className="middle--dots">..........</span>
                                 Product hunt 
                                 <i className="fab fa-product-hunt"></i>
                             </span>

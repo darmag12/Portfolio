@@ -98,10 +98,9 @@
     margin: 1rem 1rem 0 -2.6rem;
     padding: .5rem;
     grid-gap: 2rem;
-    /*justify-items: start;
-    align-content: center;
-    */background-color: rgb(57, 58, 61);
-    border-radius: 5px;
+    background-color: rgb(52, 52, 54);
+    box-shadow: 1px 1px 1.5px rgb(52, 52, 54);
+    /* border-radius: 5px; */
 }
 
 .about-card  p {

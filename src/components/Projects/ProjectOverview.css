@@ -1,7 +1,7 @@
 .project__overview-container{
     display: grid;
     justify-items: center;
-    align-items: center;
+    /* align-items: center; */
     grid-template-columns: [full-start] 1rem [center-start] repeat(4, [col-start] minmax(min-content, 1fr)[col-end]) [center-end] 1rem [full-end] ;
     grid-template-rows: 2rem repeat(3, minmax(min-content, max-content)) 2rem;
     grid-row-gap: 3rem;
@@ -12,8 +12,12 @@
 .project__overview-header{
     grid-column: col-start 1 / col-end 4;
     animation: to-top .7s ease;
-    align-self: center;
 }
+
+.project__overview-header::after{
+    height: 102%;
+    bottom: -4px;
+}    
 
 @media screen and (max-width: 388px){
     .project__overview-header{
@@ -24,7 +28,7 @@
         left: -2.0rem;
         bottom: 0;
         width: 65px;
-        height: 100%;
+        height: 90%;
     }
 
 }
