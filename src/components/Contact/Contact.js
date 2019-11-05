@@ -8,8 +8,8 @@ const Contact = () => {
              <h3 className="contact-header">
                     Contact Me <span className="dots">....................<i className="fas fa-circle"></i></span><span className="num">05.</span>
                 </h3>
-                {/* <div className="contact-top"> */}
-                    <div className="contact-top">
+                 <div className="contact-top"> 
+                    <div className="top">
                         <div className="top-card">
                             <div className="top-num">01.</div>
                             <span className="top-icon"><i className="fas fa-map-marker-alt"></i></span>
@@ -18,7 +18,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="contact-top">
+                    <div className="top">
                          <div className="top-card">
                             <div className="top-num">02.</div>
                             <span className="top-icon"><i className="fas fa-envelope"></i></span>
@@ -27,7 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="contact-top">
+                    <div className="top">
                          <div className="top-card">
                             <div className="top-num">03.</div>
                             <span className="top-icon"><i className="fas fa-phone-alt"></i></span>
@@ -35,14 +35,15 @@ const Contact = () => {
                             <p className="top-text">+1 470 778-7877</p>
                         </div>
                     </div>
+                    </div>
 
                 <div className="contact-bottom">
                     <form className="contact-form">
-                     <input type="text" placeholder="Name" required/>
-                     <input type="email" placeholder="Email" required/>
-                     <input type="text" placeholder="Subject" required/>
-                     <textarea type="text" placeholder="Your Message" required></textarea>
-                     <input type="submit" value="Send Message"/>
+                     <input className="input--mod" type="text" placeholder="Name" required/>
+                     <input className="input--mod" type="email" placeholder="Email" required/>
+                     <input className="subject input--mod" type="text" placeholder="Subject" required/>
+                     <textarea className="message" type="text" placeholder="Your Message" required></textarea>
+                     <input className="btn" type="submit" value="Send Message"/>
                     </form>
                 </div>
         </section>

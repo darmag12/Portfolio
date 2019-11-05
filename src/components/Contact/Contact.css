@@ -1,21 +1,109 @@
 .contact__container{
     grid-column: center-start / center-end;
-    background-color: thistle;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-template-rows: repeat(3, minmax(min-content, max-content));
     
 }
-
+/* ========================== CONTACT TOP SECTION STYLES ================================== */
 .contact-header{
+    margin-bottom: 2rem;
     grid-column: 1/ -1;
     grid-row: 1 / 1;
 }
 
 .contact-top{
-   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    justify-content: center;
+    grid-gap: 1rem;
 }
 
 .top{
     background-color: rgb(52, 52, 54);
+    position: relative;
 }
+
+.top-card{
+    display: inline-block;
+    text-align: start;
+    padding: 2rem;
+}
+
+.top-num{
+   position: absolute;
+   top: 0;
+   right: 0;
+   font-size: 1.3rem;
+   border-radius: 100%;
+   border: 1px dashed rgb(75, 75, 75);
+   padding: .5rem;
+   border-top-right-radius: 0;
+   color: rgb(75, 75, 77);
+   font-weight: bold;
+}
+
+.top-icon{
+    font-size: 1.1rem;
+    border: .5px solid rgb(75, 75, 75);
+    border-radius: 100%;
+    padding: .5rem .75rem .5rem .75rem;
+    margin: .5rem;
+    color: var(--primary-color);
+}
+
+.top-subtext{
+    font-size: 1.3rem;
+    padding: .2rem;
+    color: rgb(219, 219, 219);
+}
+
+.top-text{
+    padding: 1rem;
+    font-size: .9rem;
+    color: rgb(185, 184, 184);
+}
+
+/* ========================== CONTACT BOTTOM SECTION STYLES ================================== */
+.contact-bottom{
+    grid-row: 3 / 3;
+    overflow: hidden;
+    margin-top: 3rem;
+    background-image: url('../resources/contact-formbg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
+    grid-gap: 2rem;
+}
+
+.subject{
+    grid-column: 1 / -1;
+    /* grid-row: 2 / 2; */
+}
+
+.message{
+    grid-column: 1 / -1;
+    min-height: 150px;
+    padding: 1rem 1.7rem;
+    border: .5px solid rgb(97, 97, 97);
+    overflow: auto;
+    resize: none;
+    
+} 
+
+
+.input--mod{
+    height: 40px;
+    border: .5px solid rgb(97, 97, 97);
+    padding: .5rem;
+}
+
+
+
 
