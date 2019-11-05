@@ -1,5 +1,21 @@
 .contact__container{
     grid-column: center-start / center-end;
     background-color: thistle;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
     
 }
+
+.contact-header{
+    grid-column: 1/ -1;
+    grid-row: 1 / 1;
+}
+
+.contact-top{
+   
+}
+
+.top{
+    background-color: rgb(52, 52, 54);
+}
+
