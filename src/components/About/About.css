@@ -222,7 +222,7 @@
 
 .about-div{
     opacity: 0;
-    transition: all .3s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 
 /* ==================== on scroll animation classes =================== */
@@ -234,8 +234,8 @@
 }
 
 .anim-about-div{
-    animation: move-left .7s ease-in-out;
-    -webkit-animation: move-left .7s ease-in-out;
+    /* animation: move-left .7s ease-in-out;
+    -webkit-animation: move-left .7s ease-in-out; */
     opacity: 1;
 }
 
@@ -254,7 +254,7 @@
  }
 
  
- @keyframes move-left{
+ /* @keyframes move-left{
     from{
         opacity: 0;
         transform: translateX(400px);        
@@ -263,5 +263,5 @@
         opacity: 1;
         transform: translateX(0);
     }
- }
+ } */
 
