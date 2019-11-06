@@ -62,11 +62,9 @@ body {
   font-size: 62.5%;  
   color: var(--text-color);
   font-family: 'Lora', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-image: url('./components/resources/main-background.png'), linear-gradient(var(--secondary-color) , var(--secondary-color));
   background-repeat: repeat, no-repeat;
-	background-size: auto, 100% 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 
