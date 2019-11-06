@@ -1,6 +1,6 @@
 .header__container{
     grid-column: full-start / full-end;
-    background-image: linear-gradient(rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-2811648.jpg');
+    background-image: linear-gradient(rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-min.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
