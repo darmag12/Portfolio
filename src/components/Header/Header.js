@@ -1,12 +1,13 @@
 import React from 'react'
 import './Header.css'
-
+import { Controller, Scene } from 'react-scrollmagic'
 
 const Header = (props) => {
   
     return (
         <header className="header__container">
-
+          <Controller>
+            <Scene classToggle="anim-header" triggerElement="#about" offset="-200px">
           <div className={props.headerClass}>
             <div className="logo-container">
                 <a href="/">
@@ -56,6 +57,8 @@ const Header = (props) => {
             <i className={props.menu}></i>
             </div>
           </div>
+            </Scene>
+          </Controller>
          <div className="heading-text">
                 <h1>Hi! I'm Daryl Magera</h1>
                 <h2>I'm a Front-end Developer.</h2>

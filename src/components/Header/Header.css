@@ -8,6 +8,8 @@
     grid-template-rows: repeat(4, minmax(min-content, 1fr));
     grid-template-columns:[full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(1fr, 14rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
     overflow: hidden;
+    animation: fade-in 1s ease-in-out;
+    transition: all .7s ease-in-out;
     position: relative;
 }
 
@@ -122,15 +124,13 @@
 .fixed-navigation{
     display: grid;
     background-color: rgba(42, 43, 45, 0.705);
-    box-shadow: 1.5px 1.5px .5px rgba(109, 109, 109, 0.815);
+    box-shadow: .8px .8px .8px rgba(88, 88, 88, 0.856);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
-    /*grid-column: full-start / -1;
-    */
-
+    transition: background-color .3s ease-in-out;
 }
 
 .fas.fa-download {
@@ -142,11 +142,6 @@
 
 
 /* ------------ responsive nav---------------- */
-/* .navigation-mobile .mobile-li{
-    
-} */
-
-
 
 .mobile-navigation{
     grid-column: col-end 8 / col-end 9;
@@ -231,7 +226,7 @@
     margin: -1rem 0 2rem 3rem;
     justify-content: start;
     width: 100%;
-   
+    animation: fade-in 1.2s ease-in-out;
 }
 
 @media screen and (max-width: 480px){
@@ -264,6 +259,12 @@
     }
 }
 
+/*=========== Animation classes ===========*/
+.anim-header{
+    background-color: var(--secondary-color);
+    transition: all .8s ease-in-out;
+}
+
  /* ========================================= End of Header text styles ========================= */
 
  /* =============================== animations =============================*/
@@ -290,6 +291,15 @@
     0% { transform: translateX(400px); transform: rotate(0); opacity: 0;}
     100% { transform: translateX(0); transform: rotate(360deg); opacity: 1;}
 }
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    } 
+    100%{
+        opacity: 1;
+    }
+ }
 
 
 

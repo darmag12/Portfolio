@@ -82,15 +82,17 @@
     grid-gap: 2rem;
 }
 
+
 .subject{
     grid-column: 1 / -1;
     /* grid-row: 2 / 2; */
 }
 
+
 .message{
     grid-column: 1 / -1;
     min-height: 150px;
-    padding: 1rem 1.7rem;
+    padding: 1rem 1rem;
     border: .5px solid rgb(97, 97, 97);
     overflow: auto;
     resize: none;

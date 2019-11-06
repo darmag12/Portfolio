@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import { Link } from 'react-router-dom'
-// import { pics } from '../resources/myaboutpic.jpg'
+import { Controller, Scene } from 'react-scrollmagic'
 
 
 
@@ -11,14 +11,17 @@ const Projects = (props) => {
             <h3 className="project-header">
                     My Projects <span className="dots">....................<i className="fas fa-circle"></i></span><span className="num">02.</span>
                 </h3>
-
-                {props.projectData.map(item => {
-                    return <div className="project" key={item.id}>
-                        <Link to={`/portfolio/${item.id}`}>
-                            <img className="project-img" src={item.img} alt={item.alt}/>
-                        </Link>
-                    </div>
-                })}
+                <Controller>
+                        {props.projectData.map(item => {
+                            return <Scene key={item.id} classToggle="anim-projects" triggerElement="#portfolio">
+                                    <div className="project">
+                                        <Link to={`/portfolio/${item.id}`}>
+                                            <img className="project-img" src={item.img} alt={item.alt}/>
+                                        </Link>
+                                    </div>
+                                </Scene> 
+                        })}
+                </Controller>
             
         </section>
     )
