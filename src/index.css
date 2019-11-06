@@ -60,6 +60,7 @@ body {
   margin: 0;
   line-height: 1.4;
   font-size: 62.5%;
+  overflow-x:hidden;  
   color: var(--text-color);
   font-family: 'Lora', serif;
   -webkit-font-smoothing: antialiased;
@@ -67,7 +68,7 @@ body {
   background-image: url('./components/resources/main-background.png'), linear-gradient(var(--secondary-color) , var(--secondary-color));
   background-repeat: repeat, no-repeat;
 	background-size: auto, 100% 100%;
-	background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 code {
