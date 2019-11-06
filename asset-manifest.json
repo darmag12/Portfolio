@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.90067024.chunk.css",
+    "main.js": "/my-app/static/js/main.dd0c3cba.chunk.js",
+    "main.js.map": "/my-app/static/js/main.dd0c3cba.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.9a1120a3.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.9a1120a3.js.map",
+    "static/js/2.b89e2b61.chunk.js": "/my-app/static/js/2.b89e2b61.chunk.js",
+    "static/js/2.b89e2b61.chunk.js.map": "/my-app/static/js/2.b89e2b61.chunk.js.map",
+    "index.html": "/my-app/index.html",
+    "precache-manifest.744d38772a97cdb0a3e2d790fa61c9e7.js": "/my-app/precache-manifest.744d38772a97cdb0a3e2d790fa61c9e7.js",
+    "service-worker.js": "/my-app/service-worker.js",
+    "static/css/main.90067024.chunk.css.map": "/my-app/static/css/main.90067024.chunk.css.map",
+    "static/media/budgety-gif.gif": "/my-app/static/media/budgety-gif.2dd47b30.gif",
+    "static/media/budgety.png": "/my-app/static/media/budgety.576c08fe.png",
+    "static/media/Header.css": "/my-app/static/media/computer-desk-desktop-2811648.9e64def3.jpg",
+    "static/media/Contact.css": "/my-app/static/media/contact-formbg.96acc557.png",
+    "static/media/forkify-gif.gif": "/my-app/static/media/forkify-gif.2233d11f.gif",
+    "static/media/forkify.png": "/my-app/static/media/forkify.9d9a8850.png",
+    "static/media/index.css": "/my-app/static/media/main-background.792b5086.png",
+    "static/media/myaboutpic.png": "/my-app/static/media/myaboutpic.926a4438.png",
+    "static/media/omnifood-gif.gif": "/my-app/static/media/omnifood-gif.a0c37985.gif",
+    "static/media/omnifood.png": "/my-app/static/media/omnifood.0ba3a65f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a1120a3.js",
+    "static/js/2.b89e2b61.chunk.js",
+    "static/css/main.90067024.chunk.css",
+    "static/js/main.dd0c3cba.chunk.js"
+  ]
+}
