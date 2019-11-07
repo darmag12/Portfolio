@@ -44,7 +44,7 @@ const Header = (props) => {
             </div>
             <nav className="navigation-container">
                 <ul className="navigation">
-                    <li className={props.mobileViewNav}><a href="/home">Home</a></li>
+                    <li className={props.mobileViewNav}><a href="/home/">Home</a></li>
                     <li className={props.mobileViewNav}><a href="#about">About</a></li>
                     <li className={props.mobileViewNav}><a href="#portfolio">Portfolio</a></li>
                     <li className={props.mobileViewNav}><a href="#skills">Skills</a></li>
