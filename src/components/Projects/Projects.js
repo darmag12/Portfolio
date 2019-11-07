@@ -15,7 +15,7 @@ const Projects = (props) => {
                         {props.projectData.map(item => {
                             return <Scene key={item.id} classToggle="anim-projects" triggerElement="#portfolio">
                                     <div className="project">
-                                        <Link to={`/portfolio/${item.id}`}>
+                                        <Link className="link" to={`/portfolio/${item.id}`}>
                                             <img className="project-img" src={item.img} alt={item.alt}/>
                                         </Link>
                                     </div>

@@ -13,14 +13,16 @@
 }
 
 *:link,
-*:visited{
+*:visited,
+.link{
   text-decoration: none;
   color: var(--text-color);
   background-color: transparent;
 }
 
 *:active,
-*:hover{
+*:hover,
+.link{
   text-decoration: none;
   border: none;
   outline: none;
@@ -38,7 +40,7 @@
  textarea{
   font-size: 1.5rem;
 }
- html,body{box-sizing: border-box; scroll-behavior: smooth;}
+ html,body{box-sizing: border-box; scroll-behavior: smooth; scrollbar-track-color: var(--secondary-color); scrollbar-shadow-color: inset 0 0 5px grey; scrollbar-color: var(--primary-color);}
 
 /* ========================== END OF RESET =================================*/
 
@@ -63,11 +65,35 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
   font-family: 'Lora', serif;
-  background-image: url('./components/resources/main-background.png'), linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF) !important;
+  background-image: url('./components/resources/main-background.png'), linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -moz-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -o-linear-gradient(#2A2B2DFF, #2A2B2DFF);
   background-repeat: repeat, no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+/* body{
+  background-image: url('./components/resources/main-background.png'),-webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body{
+  background-image: url('./components/resources/main-background.png'), -moz-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body{
+  background-image: url('./components/resources/main-background.png'), -o-linear-gradient(#2A2B2DFF, #2A2B2DFF);
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
 
 .container {
   margin: 0 auto;
@@ -211,7 +237,7 @@ p{
   background-color: var(--secondary-color);
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
