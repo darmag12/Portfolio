@@ -73,6 +73,16 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+html{
+  background-image: url('./components/resources/main-background.png'), linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -moz-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -o-linear-gradient(#2A2B2DFF, #2A2B2DFF);
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* body{
   background-image: url('./components/resources/main-background.png'),-webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
   background-repeat: repeat, no-repeat;
