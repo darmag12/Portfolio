@@ -1,6 +1,5 @@
 import React from 'react'
 import './ProjectOverview.css'
-import { Link } from 'react-router-dom'
 
 
 
@@ -11,7 +10,7 @@ const ProjectOverview = (props) => {
 
     return (
         <>
-        <Link to="/home#portfolio"><i className="fas fa-backward btn--back"> Go back to projects</i></Link>
+        <a href="/home/#portfolio"><i className="fas fa-backward btn--back"> Go back to projects</i></a>
         <div className="project__overview-container">
              <h3 className="project__overview-header">
                     Project Overview 
