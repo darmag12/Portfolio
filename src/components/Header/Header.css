@@ -1,6 +1,8 @@
 .header__container{
     grid-column: full-start / full-end;
     background-image: linear-gradient(to bottom, rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-min.png');
+    background-image: -webkit-linear-gradient(to bottom, rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-min.png');
+    background-image: -o-linear-gradient(to bottom, rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-min.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +12,6 @@
     transition: all .7s ease-in-out;
     position: relative;
     overflow: hidden;
-    z-index: 9;
 }
 
 
