@@ -94,6 +94,12 @@
     padding: .5rem;
 }
 
+@media screen and (max-width: 340px){
+    .about-sub-title{
+       font-size: 1.1rem;
+    }
+}
+
 .about-sub-text{
     margin: 1rem 1rem 0 -2.6rem;
     padding: .5rem;
@@ -120,13 +126,23 @@
     color: rgb(175, 173, 173);
 }
 
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
     .about-card { 
         display: grid;
-        grid-template-columns: repeat(3, minmax(min-content, 1fr));
+        grid-template-rows: repeat(4, minmax(min-content, 1fr));
     
     }
+} */
+
+
+@media screen and (max-width: 350px){
+    .about-card { 
+        grid-gap: 1rem;
+        grid-template-rows: repeat(4, minmax(min-content, max-content));
+        justify-items: start;
+    }
 }
+
 
 
 
@@ -144,6 +160,16 @@
     }
 }
 
+@media screen and (max-width: 340px){
+    .about-card .name { 
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+    
+    }
+}
+
+
+
 
 .about-card .age{
     grid-column: 3 / 3;
@@ -159,6 +185,16 @@
     }
 }
 
+@media screen and (max-width: 340px){
+    .about-card .age { 
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+        width: max-content;
+        margin-left: 0;
+        margin-top: 0rem;
+    }
+}
+
 .about-card .phone{
     grid-column: 1 / 1;
     grid-row: 3 / 3;
@@ -171,6 +207,15 @@
 @media screen and (max-width: 480px){
     .about-card .phone { 
         font-size: .8rem;
+        
+    }
+}
+
+@media screen and (max-width: 340px){
+    .about-card .phone { 
+        grid-column: 1 / 2;
+        grid-row: 3 / 3;
+        margin-top: 0;
         
     }
 }
@@ -191,11 +236,22 @@
     }
 }
 
+@media screen and (max-width: 340px){
+    .about-card .location { 
+        grid-column: 1 / 2;
+        grid-row: 4 / 4;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+}
+
 .fas.fa-address-card{
     grid-column: 4/ 4;
     font-size: 2rem;
     color: var(--secondary-color);
 }
+
+
 /* ======================== about card icons  ============================ */
 .name .fas{
     vertical-align: middle;

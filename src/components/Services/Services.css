@@ -12,6 +12,12 @@
     grid-column: 1 / -1;
 }
 
+@media screen and (max-width: 350px){
+    .services-header{
+        margin-left: 2rem;
+    }
+}
+
 /* Service styles */
 
 .service{
@@ -46,10 +52,23 @@
     font-size: .5rem;
     vertical-align: super;
     color: var(--primary-color);
+} 
+
+@media screen and (max-width: 365px){
+    .dots-mod{
+        font-size: .45rem;
+    }
 }
+
 .service-type{
     font-size: 1.1rem;
     margin-left: .5rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 365px){
+    .service-type{
+        font-size: 1rem;
+    }
 }
