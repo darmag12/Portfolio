@@ -31,6 +31,13 @@
     color: rgb(190, 190, 190);
 }
 
+@media screen and (max-width: 371px){
+    .copyright{
+        font-size: .75rem;
+    }
+
+}
+
 .developer{color: var(--primary-color);}
 
 .footer-div{

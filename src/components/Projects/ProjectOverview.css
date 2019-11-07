@@ -33,6 +33,14 @@
 
 }
 
+@media screen and (max-width: 362px){
+    .project__overview-header{
+        font-size: .65rem;
+        margin-left: 0;
+    }
+
+}
+
 .h4--mod{
     text-shadow: 1px 1px 1px rgb(163, 163, 163);
     position: relative;

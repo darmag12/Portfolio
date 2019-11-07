@@ -4,6 +4,7 @@
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-template-rows: repeat(3, minmax(min-content, max-content));
+    justify-content: center;
 }
 
 .services-header{

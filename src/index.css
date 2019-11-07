@@ -63,7 +63,7 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
   font-family: 'Lora', serif;
-  background-image: url('./components/resources/main-background.png'), linear-gradient(#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), linear-gradient(#2A2B2DFF, #2A2B2DFF) !important;
   background-repeat: repeat, no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -115,6 +115,13 @@ h3{
   }
 }
 
+@media screen and (max-width: 420px){
+  h3{ 
+    margin-left: 1rem;
+  
+  }
+}
+
 h3::after{
   content: "";
   position: absolute;
@@ -132,6 +139,14 @@ h3::after{
 @media screen and (max-width: 600px){
   h3::after{ 
     width: 95px;
+  
+  }
+}
+
+
+@media screen and (max-width: 420px){
+  h3::after{ 
+    width: 85px;
   
   }
 }
@@ -233,6 +248,13 @@ p{
   vertical-align: middle;
   margin: 0 0 .5rem .5rem;
   
+}
+
+@media screen and (max-width: 370px){
+  .num{ 
+    font-size: .9rem;
+  
+  }
 }
 
 .fas.fa-cog{

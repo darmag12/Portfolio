@@ -26,6 +26,14 @@
     grid-column: 1/ -1;
 }
 
+@media screen and (max-width: 363px){
+    .project-header{
+        font-size: .65rem;
+    }
+
+}
+
+
 /* =============== screens below 800px project cards ======================= */
 @media screen and (max-width: 800px){
    
