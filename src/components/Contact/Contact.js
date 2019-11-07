@@ -39,8 +39,8 @@ const Contact = () => {
 
                 <div className="contact-bottom">
                     <form className="contact-form">
-                     <input className="input--mod" type="text" placeholder="Name" required/>
-                     <input className="input--mod" type="email" placeholder="Email" required/>
+                     <input className="input--mod set" type="text" placeholder="Name" required/>
+                     <input className="input--mod set" type="email" placeholder="Email" required/>
                      <input className="subject input--mod" type="text" placeholder="Subject" required/>
                      <textarea className="message" type="text" placeholder="Your Message" required></textarea>
                      <input className="btn" type="submit" value="Send Message"/>

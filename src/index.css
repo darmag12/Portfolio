@@ -60,18 +60,13 @@ body {
   margin: 0;
   line-height: 1.4;
   font-size: 62.5%; 
-  min-width: 100%; 
+  overflow-x: hidden;
   color: var(--text-color);
   font-family: 'Lora', serif;
-  background-image: url('./components/resources/main-background.png'), linear-gradient(var(--secondary-color) , var(--secondary-color));
+  background-image: url('./components/resources/main-background.png'), linear-gradient(#2A2B2DFF, #2A2B2DFF);
   background-repeat: repeat, no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 .container {

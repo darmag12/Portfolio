@@ -9,17 +9,25 @@ fonts;
  Montserrat & Courier New */
 
 .App {
-  width: 100%;
   display: grid;
   grid-template-rows: 100vh repeat(6, min-content);
   grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
   grid-row-gap: 6rem;
+  overflow-x: hidden;
+  /* justify-content: center; */
 }
 
 @media screen and (max-width: 800px){
   .App {
     grid-column-gap: 0rem;
     grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+  }
+}
+
+@media screen and (max-width: 500px){
+  .App {
+    grid-column-gap: 0rem;
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   }
 }
 
