@@ -34,7 +34,8 @@
     height: 100%;
     z-index: 1;
     /* clip-path: polygon(100% 85%, 0% 100%, 100% 100%); */
-    background-color: rgba(42, 43, 45, 0.801);
+    background-color: rgb(42, 43, 45);
+    opacity: .85;
 }
 
 
