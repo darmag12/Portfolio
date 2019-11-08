@@ -84,7 +84,7 @@ body::before{
   background-repeat: repeat, no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -2;
+  z-index: -1;
 }
 
 .container {
