@@ -71,9 +71,9 @@
     overflow: hidden;
     margin-top: 3rem;
     background-image: url('../resources/contact-formbg.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
+    background-repeat: repeat, no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-form{
