@@ -1,8 +1,6 @@
 .header__container{
     grid-column: full-start / full-end;
     background-image: url('../resources/computer-desk-desktop-min.png');
-    /* background-image: -webkit-linear-gradient(to bottom, rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-min.png');
-    background-image: -o-linear-gradient(to bottom, rgba(42, 43, 45, 0.801),rgba(42, 43, 45, 0.801) ), url('../resources/computer-desk-desktop-min.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,10 +9,22 @@
     grid-template-columns:[full-start] minmax(1rem, 1fr) [center-start] repeat(8, [col-start] minmax(1fr, 14rem) [col-end]) [center-end] minmax(1rem, 1fr) [full-end];
     transition: all .7s ease-in-out;
     position: relative;
-    /* clip-path: polygon(100% 85%, 0% 100%, 100% 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
 }
 
 
+.header__container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 80vh, 0% 100%, 100% 100%);
+    background-color: rgb(42, 43, 45);
+    border: 1px solid  rgb(42, 43, 45);
+    z-index: 2;
+}
 .header__container::after{
     content: "";
     position: absolute;
@@ -22,10 +32,11 @@
     bottom: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     /* clip-path: polygon(100% 85%, 0% 100%, 100% 100%); */
     background-color: rgba(42, 43, 45, 0.801);
-
 }
+
 
 /* ========================= LOGO STYLES ===================== */
 .logo-container{
@@ -190,7 +201,6 @@
 
 .none{display: none;}
 
-.mobile-fixed{background-color: rgb(42, 43, 45)}
 
 @media screen and (max-width: 800px){
     .navigation li{

@@ -104,6 +104,8 @@
     border: .5px solid rgb(97, 97, 97);
     overflow: auto;
     resize: none;
+    font-family: inherit;
+    font-size: 1.2rem;
     
 } 
 

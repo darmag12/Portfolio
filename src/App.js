@@ -36,10 +36,6 @@ screenChange = () => {
   let mql = window.matchMedia('(max-width: 800px)');
   if(mql.matches){
     this.setState({
-      ...this.state.headerClass, 
-      headerClass: "fixed-navigation mobile-fixed",
-      // ...this.state.mobileViewNav,
-      // mobileViewNav: '',
       ...this.state.display,
       display: 'block',
       ...this.state.noneClass,
@@ -51,8 +47,6 @@ screenChange = () => {
   } else {
     // fixedNav = " fixed-navigation"
     this.setState({
-      ...this.state.headerClass,
-       headerClass: "fixed-navigation",
        ...this.state.mobileViewNav,
        mobileViewNav: '',
        ...this.state.display,
