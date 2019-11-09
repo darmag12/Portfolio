@@ -62,14 +62,19 @@ body {
   margin: 0;
   line-height: 1.4;
   font-size: 62.5%; 
+  font-family: 'Lora', serif;
   overflow-x: hidden;
   color: var(--text-color);
-  font-family: 'Lora', serif;
+  background-image: url(./components/resources/main-background.png), linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url(./components/resources/main-background.png), -webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
   min-height: 100vh;
   position: relative;
-  z-index: 1;
+  
 }
-
+/* 
 body::before{
   content: "";
   position: absolute;
@@ -78,17 +83,18 @@ body::before{
   width: 100%;
   height: 100%;
   background-color: var(--secondary-color);
-  /* background-image: url('./components/resources/main-background.png'), -webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
   background-image: url('./components/resources/main-background.png'), -moz-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
   background-image: url('./components/resources/main-background.png'), -o-linear-gradient(#2A2B2DFF, #2A2B2DFF);
   background-image: url('./components/resources/main-background.png'), -webkit-gradient(linear, left top, right top, color-stop(100%, #2A2B2DFF), color-stop(100%,#2A2B2DFF), color-stop(100%,#2A2B2DFF));
-  */
-  background-image: url('./components/resources/main-background.png');
+ 
+  background-image: url(./components/resources/main-background.png), linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
+  background-image: url('./components/resources/main-background.png'), -webkit-linear-gradient(to bottom,#2A2B2DFF, #2A2B2DFF);
   background-repeat: repeat, no-repeat;
   background-size: cover;
   background-attachment: fixed; 
   z-index: -1;
-}
+} */
 
 .container {
   margin: 0 auto;
