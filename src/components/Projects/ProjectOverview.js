@@ -58,4 +58,4 @@ const ProjectOverview = (props) => {
     )
 }
 
-export default ProjectOverview;
+export default React.memo(ProjectOverview);

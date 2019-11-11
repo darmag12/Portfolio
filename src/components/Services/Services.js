@@ -84,4 +84,4 @@ const Services = () => {
     )
 }
 
-export default Services;
+export default React.memo(Services);
