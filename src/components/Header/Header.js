@@ -49,7 +49,7 @@ const Header = (props) => {
                     <li className={props.mobileViewNav}><a href="#portfolio">Portfolio</a></li>
                     <li className={props.mobileViewNav}><a href="#skills">Skills</a></li>
                     <li className={props.mobileViewNav}><a href="#contact">Contact</a></li>
-                    <li className={props.mobileViewNav}><a href="#resume">Resume<i className="fas fa-download"></i></a></li>
+                    <li className={props.mobileViewNav}><a href="./MyResume.pdf" download="Resume">Resume<i className="fas fa-download"></i></a></li>
                 </ul>
             </nav>
             <div className="mobile-navigation" style={{display: props.display}}

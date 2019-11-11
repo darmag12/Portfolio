@@ -32,7 +32,7 @@ const About = () => {
                     <p className="location"><span><i className="fas fa-circle"></i> Loc: </span>Georgia,USA</p>
                     <i className="fas fa-address-card"></i>
                 </div>
-                <button className="btn btn--about">Download Resume</button>
+                <a href="./MyResume.pdf" download="Resume"><button className="btn btn--about">Download Resume</button></a>
                 </div>
                 </Scene>
             </Controller>
