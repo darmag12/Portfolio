@@ -16,6 +16,12 @@ fonts;
   overflow-x: hidden;
 }
 
+@media screen and (min-width: 1450px){
+  .App{
+    grid-row-gap: 9rem;
+  }
+}
+
 @media screen and (max-width: 800px){
   .App {
     grid-column-gap: 0rem;

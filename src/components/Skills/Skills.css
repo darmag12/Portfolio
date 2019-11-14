@@ -58,6 +58,12 @@
     grid-row: 1 / 1;
 }
 
+@media screen and (min-width: 1450px){
+    .fas.fa-cogs{
+        font-size: 1.9rem;
+    }
+  }
+
 @media screen and (max-width: 653px){
     .fas.fa-cogs{
         font-size: 1.3rem;
@@ -118,6 +124,12 @@
     font-size: 1rem;
 }
 
+@media screen and (min-width: 1450px){
+    .skills--tech .num{
+        font-size: 1.4rem;
+    }
+  }
+
 @media screen and (max-width: 1030px){
 
     .skills--tech .num{
@@ -152,6 +164,12 @@
     color: rgb(94, 94, 94);
     font-size: .6rem;
 }
+
+@media screen and (min-width: 1450px){
+    .middle--dots{
+        font-size: .8rem;
+    }
+  }
 
 .skills--tech .fab{
     color: #2DA8D8FF;
@@ -190,6 +208,12 @@
     color: rgb(167, 165, 165);
     font-size: 1rem;
 }
+
+@media screen and (min-width: 1450px){
+    .skills--other .num{
+        font-size: 1.4rem;
+    }
+  }
 
 @media screen and (max-width: 600px){
 
@@ -232,6 +256,12 @@
     margin: 1rem;
     color: rgb(190, 190, 190);
 }
+
+@media screen and (min-width: 1450px){
+    .fas.fa-code-branch{
+        font-size: 1.9rem;
+    }
+  }
 
 @media screen and (max-width: 653px){
     .fas.fa-code-branch{

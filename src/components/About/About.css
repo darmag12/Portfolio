@@ -2,7 +2,7 @@
     grid-column: center-start / center-end;
     display: grid;  
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    grid-template-rows: minmax(min-content, 1fr);
+    /* grid-template-rows: minmax(min-content, 1fr); */
     grid-column-gap: 4rem;
     width: 100%;
     
@@ -74,6 +74,7 @@
 /* ======================= About text container styles ========================== */
 .about-text-container{
     margin-left: 1rem;
+    min-height: max-content;
     
 }
 

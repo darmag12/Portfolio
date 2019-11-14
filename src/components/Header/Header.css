@@ -27,6 +27,12 @@
     width: 10rem;
 }
 
+@media screen and (min-width: 1450px){
+    #logo--main{
+        width: 13rem;
+    }
+}
+
 
 #logo--main path:nth-child(2){
     stroke: #2DA8D8FF;
@@ -92,6 +98,13 @@
     color: white;
     animation: move-left .9s ease-in-out;
     position: relative;
+}
+
+@media screen and (min-width: 1400px){
+    .navigation li a{
+        font-size: 1rem;
+
+    }
 }
 
 .navigation li a::after{
@@ -213,12 +226,21 @@
     display: grid;
     grid-row: 3 / 3;
     grid-gap: 1rem;
-    margin: -1rem 0 2rem 3rem;
+    margin: -3rem 0 2rem 3rem;
     justify-content: start;
     width: 100%;
     animation: fade-in 1.2s ease-in-out;
     z-index: 10;
     color: white;
+}
+
+
+
+@media screen and (min-width: 1450px){
+    .heading-text {
+        margin: -5rem 0 3rem 6rem;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -239,6 +261,12 @@
    font-size: 2.4rem; 
 }
 
+@media screen and (min-width: 1450px){
+    .heading-text h1{
+        font-size: 2.9rem;
+    }
+}
+
 @media screen and (max-width: 480px){
     .heading-text h1 { 
         font-size: 2rem;
@@ -256,7 +284,13 @@
 
 .heading-text h2 {
     font-size: 2rem; 
- }
+}
+
+@media screen and (min-width: 1450px){
+    .heading-text h2{
+        font-size: 2.5rem;
+    }
+}
 
  @media screen and (max-width: 480px){
     .heading-text h2 { 

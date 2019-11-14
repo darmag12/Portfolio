@@ -42,7 +42,7 @@ const Footer = () => {
                 </div> 
                 <div className="footer-icons">
                 <Controller>
-                    <Scene classToggle="anim-footer-div" triggerElement="#contact" offset="600px">
+                    <Scene classToggle="anim-footer-div" triggerElement="#contact" offset="400px">
                     <div className="footer-div">
                      <a href="https://github.com/darmag12" target="_blank" rel="noopener noreferrer">
                          <i className="fab fa-github-square"></i>
