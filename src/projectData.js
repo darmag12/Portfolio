@@ -17,7 +17,7 @@ export const projects = [
     },
 
     {id: "project-3",
-     img: require('./components/resources/omnifood.png'),
+     img: require('./components/resources/lambdatimes.png'),
      alt: "project-3" 
     },
 
@@ -82,18 +82,18 @@ export const projects = [
     },
 
     {id: "project-3",
-     title: "....",
-     description: `Budgeting made easy. This app will help you manage your cash flow and also see how much    money you are earning and how much you spend on certain things.
+     title: "Lambda Times",
+     description: `This is a Lambda Newspaper. My job was to add functionality to the tabs below the 'Lambda Times' logo. Where by the tabs act as filters for articles, and when clicked on, they filter out all articles except those with that tag.
      It's features includes;`,
      features:`
-     ability to add and delete an Income or Expense,
-     calculates the percentage you spend in relation to your budget,
-     Updates everything in real time`,
-     img: require('./components/resources/omnifood.png'),
+     Month, date and year update automagically,
+     Includes a carosel which was one of the stretch goals of this project,
+     Sticky navigation.`,
+     img: require('./components/resources/lambdatimes-gif.gif'),
      alt: "project-3",
      num: 2.4,
-     siteLink: "https://www.omnifood.cf/",
-     codeLink: "https://github.com/darmag12/Omnifood"
+     siteLink: "http://www.lambdatimes.cf/",
+     codeLink: "https://github.com/darmag12/Sprint-Challenge-Applied-Javascript"
     },
 
     {id: "project-4",
