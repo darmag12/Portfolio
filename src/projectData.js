@@ -43,7 +43,7 @@ export const projects = [
       ability to search for your favorite meals,
       ability to save your favorite recipes,
       ability to add a recipe to a shopping list which gives you a list of ingredients,
-      No need of worrying about losing your favorite recipe list you leave the application.`,
+      No need of worrying about losing your favorite recipe list when you leave the application.`,
      img: require('./components/resources/forkify-gif.gif'),
      alt: "project-0",
      num: 2.1,
