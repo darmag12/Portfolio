@@ -127,7 +127,7 @@ export const projects = [
      img: require('./components/resources/piggame-gif.gif'),
      alt: "project-5",
      num: 2.6,
-     siteLink: "https://daryl-magera-pig-game.netlify.com/",
+     siteLink: "http://www.piggame.cf",
      codeLink: "https://github.com/darmag12/pig-game"
     },
 
