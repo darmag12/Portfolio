@@ -29,6 +29,12 @@
     <title>Dartechx - Daryl Technologies</title>
   </head>
   <body>
+      <form name="contact" className="contact-form" netlify netlify-honeypot="bot-field" hidden>
+          <input className="input--mod set" type="text" name="name" placeholder="Name" required/>
+          <input className="input--mod set" type="email" name="email" placeholder="Email" required/>
+          <input className="subject input--mod" type="text" name="subject" placeholder="Subject" required/>
+          <textarea className="message" type="text" name="message" placeholder="Your Message" required></textarea>
+         </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

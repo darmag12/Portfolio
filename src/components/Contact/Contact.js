@@ -38,13 +38,14 @@ const Contact = () => {
                     </div>
 
                 <div className="contact-bottom">
-                    <form className="contact-form">
-                     <input className="input--mod set" type="text" placeholder="Name" required/>
-                     <input className="input--mod set" type="email" placeholder="Email" required/>
-                     <input className="subject input--mod" type="text" placeholder="Subject" required/>
-                     <textarea className="message" type="text" placeholder="Your Message" required></textarea>
-                     <input className="btn" type="submit" value="Send Message"/>
-                    </form>
+                <form name="contact" className="contact-form" method="post">
+                    <input type="hidden" name="form-name" value="contact"/>
+                    <input className="input--mod set" type="text" name="name" placeholder="Name" required/>
+                    <input className="input--mod set" type="email" name="email" placeholder="Email" required/>
+                    <input className="subject input--mod" type="text" name="subject" placeholder="Subject" required/>
+                    <textarea className="message" type="text" name="message" placeholder="Your Message" required></textarea>
+                    <input className="btn" type="submit" value="Send Message"/>
+                </form>
                 </div>
         </section>
     )
