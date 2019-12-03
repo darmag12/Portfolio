@@ -38,12 +38,12 @@ export const projects = [
     {id: "project-0",
      title: "Forkify",
      description: `The Forkify app was developed for both cooks and people who don't know how to cook.
-     It's features include;`,
+     It features;`,
       features:`
-      ability to search for your favorite meals/dishes,
-      ability to save your ffavorite recipes,
-      ability to add a recipe to a shopping list which enables you to see what you need to cook a certain dish,
-      also no need of worrying about losing your favorite recipe list when you refresh the site or visit a different site`,
+      ability to search for your favorite meals,
+      ability to save your favorite recipes,
+      ability to add a recipe to a shopping list which gives you a list of ingredients,
+      No need of worrying about losing your favorite recipe list you leave the application.`,
      img: require('./components/resources/forkify-gif.gif'),
      alt: "project-0",
      num: 2.1,
@@ -54,7 +54,7 @@ export const projects = [
     {id: "project-1",
      title: "Budgety",
      description: `Budgeting made easy. This app will help you manage your cash flow and also see how much    money you are earning and how much you spend on certain things.
-      It's features includes;`,
+        It features`,
       features:`
       ability to add and delete an Income or Expense,
       calculates the percentage you spend in relation to your budget,
@@ -70,7 +70,7 @@ export const projects = [
      title: "Omnifood",
      description: `This is a landing page for a food delivery company that delivers healthy food.
      This company targets people that have a tight schedule sometimes, making it hard to cook at home but still want to eat a healthy meal.
-     It's features includes;`,
+     It features;`,
      features:`
      Smooth scrolling effects,
      Responsive`,
@@ -100,7 +100,7 @@ export const projects = [
     {id: "project-4",
      title: "Lambda Times",
      description: `This is a Lambda Newspaper. My job was to add functionality to the tabs below the 'Lambda Times' logo. Where by the tabs act as filters for articles, and when clicked on, they filter out all articles except those with that tag.
-     It's features includes;`,
+     It features`,
      features:`
      Month, date and year update automagically,
      Includes a carosel which was one of the stretch goals of this project,
