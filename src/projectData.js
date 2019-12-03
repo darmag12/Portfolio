@@ -40,10 +40,10 @@ export const projects = [
      description: `The Forkify app was developed for both cooks and people who don't know how to cook.
      It's features include;`,
       features:`
-      ability to search for your favourite meals/dishes,
-      ability to save your favourite recipes,
-      ability to add a recipe to a shopping list which enables you to see what you need in order to cook a certain dish,
-      also no need of worrying about losing your favourite recipe list when you refresh the site or visit a different site`,
+      ability to search for your favorite meals/dishes,
+      ability to save your ffavorite recipes,
+      ability to add a recipe to a shopping list which enables you to see what you need to cook a certain dish,
+      also no need of worrying about losing your favorite recipe list when you refresh the site or visit a different site`,
      img: require('./components/resources/forkify-gif.gif'),
      alt: "project-0",
      num: 2.1,
