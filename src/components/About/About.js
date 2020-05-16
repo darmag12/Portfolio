@@ -8,7 +8,7 @@ const About = () => {
             <Controller>
                 <Scene classToggle="anim-about-img" triggerElement="#about" offset="-100px">
             <div className="about-image">
-                <img src={require('../resources/myaboutpic.png')} alt="about me"></img>
+                <img src={require('../resources/myaboutpic.jpg')} alt="about me"></img>
             </div>
                 </Scene>
             </Controller>
