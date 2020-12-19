@@ -14,7 +14,7 @@ const Contact = () => {
                             <div className="top-num">01.</div>
                             <span className="top-icon"><i className="fas fa-map-marker-alt"></i></span>
                             <span className="top-subtext">Location</span>
-                            <p className="top-text">Georgia, USA</p>
+                            <p className="top-text">Florida, USA</p>
                         </div>
                     </div>
 
@@ -32,7 +32,7 @@ const Contact = () => {
                             <div className="top-num">03.</div>
                             <span className="top-icon"><i className="fas fa-phone-alt"></i></span>
                             <span className="top-subtext">Phone</span>
-                            <p className="top-text">+1 470 778-7877</p>
+                            <p className="top-text">+1 757 402-0354</p>
                         </div>
                     </div>
                     </div>

@@ -20,16 +20,16 @@ const About = () => {
                 <Scene classToggle="anim-about-div" triggerElement="#about" offset="-100px">
                 <div className="about-div">
                 <h4 className="about-sub-title">
-                    Hi there! Once again my name is Daryl Magera and I'm currently freelancing as a front-end developer. 
+                    Hi there! Once again my name is Daryl Magera and I'm currently working as a Jr Web Developer at Markentum. 
                 </h4>
                 <p className="about-sub-text">
                 I decided to pursue web development by joining a coding boot-camp and in the process I realized it was meant for me because I really enjoy coding, working with a team and building websites especially from scratch. It will be an honor to work for your company or build a project you have in mind. Thanks in advance!
                 </p>
                 <div className="about-card">
                     <p className="name"><span><i className="fas fa-circle"></i> Name: </span>Daryl Magera</p>
-                    <p className="phone"><span><i className="fas fa-circle"></i> No: </span>+1 470 778 7877</p>
-                    <p className="age"><span><i className="fas fa-circle"></i> Age: </span>21</p>
-                    <p className="location"><span><i className="fas fa-circle"></i> Loc: </span>Georgia,USA</p>
+                    <p className="phone"><span><i className="fas fa-circle"></i> No: </span>+1 757 402 0354</p>
+                    <p className="age"><span><i className="fas fa-circle"></i> Age: </span>22</p>
+                    <p className="location"><span><i className="fas fa-circle"></i> Loc: </span>Florida,USA</p>
                     <i className="fas fa-address-card"></i>
                 </div>
                 <a href="./MyResume.pdf" download="Resume"><button className="btn btn--about">Download Resume</button></a>

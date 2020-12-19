@@ -74,7 +74,7 @@ export const projects = [
 
     {id: "project-2",
      title: "Budgety",
-     description: `Budgeting made easy. This app will help you manage your cash flow and also see how much    money you are earning and how much you spend on certain things.
+     description: `Budgeting made easy. This app will help you manage your cash flow and also see how much money you are earning and how much you spend on certain things.
         It features`,
       features:`
       ability to add and delete an Income or Expense,
@@ -88,7 +88,7 @@ export const projects = [
     },
 
     {id: "project-3",
-     title: "Omnifood",
+     title: "Omifood",
      description: `This is a landing page for a food delivery company that delivers healthy food.
      This company targets people that have a tight schedule sometimes, making it hard to cook at home but still want to eat a healthy meal.
      It features;`,
@@ -98,7 +98,7 @@ export const projects = [
      img: require('./components/resources/omnifood-gif.gif'),
      alt: "project-3",
      num: 2.4,
-     siteLink: "https://www.omnifood.cf/",
+     siteLink: "https://www.omifood.cf/",
      codeLink: "https://github.com/darmag12/Omnifood"
     },
 
@@ -114,7 +114,7 @@ export const projects = [
      img: require('./components/resources/instagramclone-gif.gif'),
      alt: "project-4",
      num: 2.5,
-     siteLink: "https://www.instagramclone.cf/",
+     siteLink: "https://www.instagramclone.ga/",
      codeLink: "https://github.com/darmag12/React-Insta-Clone"
     },
 
